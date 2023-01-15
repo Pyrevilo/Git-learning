@@ -10,6 +10,18 @@
 
     <title>Document</title>
     <!--Title of webpage in the tab-->
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- External css stylesheet. It lets us know which css file to apply the website/webpage's styles.-->
+
+    <!-- we can also add css internally to a html by the following:
+    <style>
+        div {
+            color: blue;
+        }
+    this changes any divs into blue-->
+
+
 </head>
 
 <body>
@@ -47,12 +59,29 @@
     <!--Use ./ before the directory of relative links to prevent issues occuring-->
 
     <p><img src="./Odin-links-and-images/images/dog.jpg"></p>
-    <!--Specigy pathway to image to include it in the webpage-->
+    <!--Specify pathway to image to include it in the webpage-->
+    <!--This is navigated like terminal nagivation. Remember to include the ./ --> 
+    
+    <div class="test" id="test">
+        <p>Hello</p>
+    </div>
+    <!-- We can assign classes and IDs to our containers to individualise them for reference in the css file.-->
 
+    <div class="multiple classes"> More classes</div>
+    <!-- this div contains 2 classes.-->
 
+    <div class="ancestor">
+        <div class="parent">
+            <div class="child">child1</div>
+            <div class="child2">child2</div>
+        </div>
+    </div>
 
-
-
+    <nav class="flexbox">
+        <div class="home">home</div>
+        <div class="search">search</div>
+        <div class="contact">contact</div>
+    </nav>
 
     </body>
 </html>

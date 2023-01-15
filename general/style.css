@@ -1,0 +1,44 @@
+.test {
+    /*this is how we refer to classes */
+}
+
+#test {
+    /* this is how to refer to IDs. IDs are unique and should be last resort */
+}
+
+.test, #test {
+    /* this is how to refer to multiple selectors */
+}
+
+.multiple.classes {
+    color: red;
+    /* This selects text with both classes only */
+}
+
+.ancestor .parent {
+    background-color: yellow;
+    /* this allows us to call on classes that are under other classes */
+}
+
+/*items within a flexbox container will become flex items */
+.flexbox {
+    border: 2px solid orange;
+    display: flex;
+}
+/* flexbox is by default a block element as it takes up all available space across webapge */
+
+.flexbox div{
+    background-color: peachpuff;
+    border: 4px solid brown;
+    height: 40px;
+    flex: 1;
+    /*flex is a short for flex-grow 1, flex-shrink 1, flex-basis 0
+        flex-basis sets the base width of the item. 
+            flexbasis: 200px means the item will increase to a maximum of 200px
+        flex-grow: 1 allows items to grow to fill the container
+            the number decides how quickly the item grows within the container
+        flex-shink makes the items shrink at a given rate relative to each other
+            if its set to 0, the items will not shrink*/
+}
+
+
